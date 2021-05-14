@@ -19,7 +19,11 @@
         { "id": 4, "name": "Burnley", "icon": "burnley", "played": 34, "won": 9, "drawn": 9, "lost": 16, "gd": -16, "points": 36, "color": "#7f1734" },
         { "id": 8, "name": "Fulham", "icon": "fulham", "played": 34, "won": 5, "drawn": 12, "lost": 17, "gd": -20, "points": 27, "color": "black" },
         { "id": 18, "name": "West Bromwich Albion", "icon": "westbromwichalbion", "played": 35, "won": 5, "drawn": 11, "lost": 19, "gd": -36, "points": 26, "color": "blue" },
-        { "id": 15, "name": "Sheffield United", "icon": "sheffieldunited", "played": 35, "won": 5, "drawn": 2, "lost": 28, "gd": -44, "points": 17, "color": "red" }
+        { "id": 15, "name": "Sheffield United", "icon": "sheffieldunited", "played": 35, "won": 5, "drawn": 2, "lost": 28, "gd": -44, "points": 17, "color": "red" },
+        { "id": 21, "name": "Watford", "icon": "watford", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#fbee23" },
+        { "id": 22, "name": "Norwich City", "icon": "norwichcity", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "green" },
+        { "id": 23, "name": "Brentford", "icon": "brentford", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red" },
+        { "id": 24, "name": "Bournemouth", "icon": "bournemouth", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red" }
       ],
       "fixtures": [
         [
