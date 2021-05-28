@@ -1,6 +1,6 @@
 <template>
     <div class="grid">
-        <ClubBox v-for="club in $store.state.league" :key="club.id" :club="club" />
+        <ClubBox v-for="club in clubs" :key="club.id" :club="club" />
     </div>
 </template>
 
@@ -9,8 +9,16 @@ import ClubBox from '@/components/ClubBox'
 
 export default({
     name: 'Clubs',
+    data() {
+        return {
+            clubs: []
+        }
+    },
     components: {
         ClubBox,
+    },
+    mounted() {
+        this.clubs = this.$store.state.league.sort((a, b) => a.name.localeCompare(b.name))
     }
 })
 </script>
