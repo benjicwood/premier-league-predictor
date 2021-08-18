@@ -23,4 +23,5 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-fixtures up to November
+fixtures up to December 11th
+https://www.bbc.co.uk/sport/football/premier-league/scores-fixtures/2021-12
