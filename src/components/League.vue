@@ -1,7 +1,7 @@
 <template>
 <div class="league-table-container">
     <TableHeader />
-    <TableRow class="table" v-for="(team, position) in $store.state.league" :key="position" :team="team" :position="position + 1" />
+    <TableRow class="table" v-for="(team, position) in currentClubs" :key="position" :team="team" :position="position + 1" />
 </div>
 </template>
 
@@ -14,7 +14,12 @@ export default({
     components: {
         TableHeader,
         TableRow,
-    }
+    },
+    data() {
+        return {
+            currentClubs: this.$store.state.league.filter(club => club.current),
+        }
+    },
 })
 </script>
 
