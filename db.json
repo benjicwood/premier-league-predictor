@@ -24,20 +24,109 @@
       { "id": 4, "name": "Burnley", "icon": "burnley", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#7f1734", "current": false },
       { "id": 22, "name": "Norwich City", "icon": "norwichcity", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "green", "current": false },
       { "id": 18, "name": "West Bromwich Albion", "icon": "westbromwichalbion", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "blue", "current": false },
-      { "id": 15, "name": "Sheffield United", "icon": "sheffieldunited", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": false }
+      { "id": 15, "name": "Sheffield United", "icon": "sheffieldunited", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": false },
+      { "id": 26, "name": "Bradford City", "icon": "bradfordcity", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#F89C29", "current": false },
+      { "id": 27, "name": "Blackburn Rovers", "icon": "blackburnrovers", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#00A0E1", "current": false },
+      { "id": 28, "name": "Stoke City", "icon": "stokecity", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": false },
+      { "id": 29, "name": "Ipswich Town", "icon": "ipswichtown", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "darkblue", "current": false },
+      { "id": 30, "name": "Portsmouth", "icon": "portsmouth", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "lightblue", "current": false }
     ],
     "fixtures": [
       [
-        { "home": "Arsenal", "homescore": null, "awayscore": null, "away": "Everton" },
-        { "home": "Brentford", "homescore": null, "awayscore": null, "away": "Leeds United" },
-        { "home": "Brighton & Hove Albion", "homescore": null, "awayscore": null, "away": "West Ham United" },
-        { "home": "Burnley", "homescore": null, "awayscore": null, "away": "Newcastle United" },
-        { "home": "Chelsea", "homescore": null, "awayscore": null, "away": "Watford" },
-        { "home": "Crystal Palace", "homescore": null, "awayscore": null, "away": "Manchester United" },
+        { "home": "Crystal Palace", "homescore": null, "awayscore": null, "away": "Arsenal" },
+        { "home": "Fulham", "homescore": null, "awayscore": null, "away": "Liverpool" },
+        { "home": "Bournemouth", "homescore": null, "awayscore": null, "away": "Aston Villa" },
+        { "home": "Leeds United", "homescore": null, "awayscore": null, "away": "Wolverhampton Wanderers" },
+        { "home": "Newcastle United", "homescore": null, "awayscore": null, "away": "Nottingham Forest" },
+        { "home": "Tottenham Hotspur", "homescore": null, "awayscore": null, "away": "Southampton" },
+        { "home": "Everton", "homescore": null, "awayscore": null, "away": "Chelsea" },
+        { "home": "Leicester City", "homescore": null, "awayscore": null, "away": "Brentford" },
+        { "home": "Manchester United", "homescore": null, "awayscore": null, "away": "Brighton & Hove Albion" },
+        { "home": "West Ham United", "homescore": null, "awayscore": null, "away": "Manchester City" }
+      ],
+      [
+        { "home": "Aston Villa", "homescore": null, "awayscore": null, "away": "Everton" },
+        { "home": "Arsenal", "homescore": null, "awayscore": null, "away": "Leicester City" },
+        { "home": "Brighton & Hove Albion", "homescore": null, "awayscore": null, "away": "Newcastle United" },
+        { "home": "Manchester City", "homescore": null, "awayscore": null, "away": "Bournemouth" },
+        { "home": "Southampton", "homescore": null, "awayscore": null, "away": "Leeds United" },
+        { "home": "Wolverhampton Wanderers", "homescore": null, "awayscore": null, "away": "Fulham" },
+        { "home": "Brentford", "homescore": null, "awayscore": null, "away": "Manchester United" },
+        { "home": "Nottingham Forest", "homescore": null, "awayscore": null, "away": "West Ham United" },
+        { "home": "Chelsea", "homescore": null, "awayscore": null, "away": "Tottenham Hotspur" },
+        { "home": "Liverpool", "homescore": null, "awayscore": null, "away": "Crystal Palace" }
+      ],
+      [
+        { "home": "Tottenham Hotspur", "homescore": null, "awayscore": null, "away": "Wolverhampton Wanderers" },
+        { "home": "Crystal Palace", "homescore": null, "awayscore": null, "away": "Aston Villa" },
+        { "home": "Everton", "homescore": null, "awayscore": null, "away": "Nottingham Forest" },
+        { "home": "Fulham", "homescore": null, "awayscore": null, "away": "Brentford" },
         { "home": "Leicester City", "homescore": null, "awayscore": null, "away": "Southampton" },
+        { "home": "Bournemouth", "homescore": null, "awayscore": null, "away": "Arsenal" },
+        { "home": "Leeds United", "homescore": null, "awayscore": null, "away": "Chelsea" },
+        { "home": "West Ham United", "homescore": null, "awayscore": null, "away": "Brighton & Hove Albion" },
+        { "home": "Newcastle United", "homescore": null, "awayscore": null, "away": "Manchester City" },
+        { "home": "Manchester United", "homescore": null, "awayscore": null, "away": "Liverpool" }
+      ],
+      [
+        { "home": "Southampton", "homescore": null, "awayscore": null, "away": "Manchester United" },
+        { "home": "Brentford", "homescore": null, "awayscore": null, "away": "Everton" },
+        { "home": "Brighton & Hove Albion", "homescore": null, "awayscore": null, "away": "Leeds United" },
+        { "home": "Chelsea", "homescore": null, "awayscore": null, "away": "Leicester City" },
+        { "home": "Liverpool", "homescore": null, "awayscore": null, "away": "Bournemouth" },
+        { "home": "Manchester City", "homescore": null, "awayscore": null, "away": "Crystal Palace" },
+        { "home": "Arsenal", "homescore": null, "awayscore": null, "away": "Fulham" },
+        { "home": "Aston Villa", "homescore": null, "awayscore": null, "away": "West Ham United" },
+        { "home": "Wolverhampton Wanderers", "homescore": null, "awayscore": null, "away": "Newcastle United" },
+        { "home": "Nottingham Forest", "homescore": null, "awayscore": null, "away": "Tottenham Hotspur" }
+      ],
+      [
+        { "home": "Crystal Palace", "homescore": null, "awayscore": null, "away": "Brentford" },
+        { "home": "Fulham", "homescore": null, "awayscore": null, "away": "Brighton & Hove Albion" },
+        { "home": "Southampton", "homescore": null, "awayscore": null, "away": "Chelsea" },
+        { "home": "Leeds United", "homescore": null, "awayscore": null, "away": "Everton" },
+        { "home": "Arsenal", "homescore": null, "awayscore": null, "away": "Aston Villa" },
+        { "home": "Bournemouth", "homescore": null, "awayscore": null, "away": "Wolverhampton Wanderers" },
+        { "home": "Manchester City", "homescore": null, "awayscore": null, "away": "Nottingham Forest" },
+        { "home": "West Ham United", "homescore": null, "awayscore": null, "away": "Tottenham Hotspur" },
+        { "home": "Liverpool", "homescore": null, "awayscore": null, "away": "Newcastle United" },
+        { "home": "Leicester City", "homescore": null, "awayscore": null, "away": "Manchester United" }
+      ],
+      [
+        { "home": "Everton", "homescore": null, "awayscore": null, "away": "Liverpool" },
+        { "home": "Brentford", "homescore": null, "awayscore": null, "away": "Leeds United" },
+        { "home": "Newcastle United", "homescore": null, "awayscore": null, "away": "Crystal Palace" },
+        { "home": "Nottingham Forest", "homescore": null, "awayscore": null, "away": "Bournemouth" },
+        { "home": "Tottenham Hotspur", "homescore": null, "awayscore": null, "away": "Fulham" },
+        { "home": "Wolverhampton Wanderers", "homescore": null, "awayscore": null, "away": "Southampton" },
+        { "home": "Aston Villa", "homescore": null, "awayscore": null, "away": "Manchester City" },
+        { "home": "Brighton & Hove Albion", "homescore": null, "awayscore": null, "away": "Leicester City" },
+        { "home": "Chelsea", "homescore": null, "awayscore": null, "away": "West Ham United" },
+        { "home": "Manchester United", "homescore": null, "awayscore": null, "away": "Arsenal" }
+      ],
+      [
+        { "home": "Fulham", "homescore": null, "awayscore": null, "away": "Chelsea" },
+        { "home": "Bournemouth", "homescore": null, "awayscore": null, "away": "Brighton & Hove Albion" },
+        { "home": "Leicester City", "homescore": null, "awayscore": null, "away": "Aston Villa" },
         { "home": "Liverpool", "homescore": null, "awayscore": null, "away": "Wolverhampton Wanderers" },
-        { "home": "Manchester City", "homescore": null, "awayscore": null, "away": "Aston Villa" },
-        { "home": "Norwich City", "homescore": null, "awayscore": null, "away": "Tottenham Hotspur" }
+        { "home": "Southampton", "homescore": null, "awayscore": null, "away": "Brentford" },
+        { "home": "Manchester City", "homescore": null, "awayscore": null, "away": "Tottenham Hotspur" },
+        { "home": "Arsenal", "homescore": null, "awayscore": null, "away": "Everton" },
+        { "home": "West Ham United", "homescore": null, "awayscore": null, "away": "Newcastle United" },
+        { "home": "Crystal Palace", "homescore": null, "awayscore": null, "away": "Manchester United" },
+        { "home": "Leeds United", "homescore": null, "awayscore": null, "away": "Nottingham Forest" }
+      ],
+      [
+        { "home": "Aston Villa", "homescore": null, "awayscore": null, "away": "Southampton" },
+        { "home": "Nottingham Forest", "homescore": null, "awayscore": null, "away": "Fulham" },
+        { "home": "Wolverhampton Wanderers", "homescore": null, "awayscore": null, "away": "Manchester City" },
+        { "home": "Brighton & Hove Albion", "homescore": null, "awayscore": null, "away": "Crystal Palace" },
+        { "home": "Everton", "homescore": null, "awayscore": null, "away": "West Ham United" },
+        { "home": "Newcastle United", "homescore": null, "awayscore": null, "away": "Bournemouth" },
+        { "home": "Tottenham Hotspur", "homescore": null, "awayscore": null, "away": "Leicester City" },
+        { "home": "Brentford", "homescore": null, "awayscore": null, "away": "Arsenal" },
+        { "home": "Manchester United", "homescore": null, "awayscore": null, "away": "Leeds United" },
+        { "home": "Chelsea", "homescore": null, "awayscore": null, "away": "Liverpool" }
       ]
     ]
 }

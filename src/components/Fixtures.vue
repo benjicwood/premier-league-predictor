@@ -22,6 +22,8 @@ export default({
     },
     methods: {
         updateTable() {
+            console.log('hello')
+            // console.log(this.$store.state.fixtures[this.gameweek])
             for (const fixture of this.$store.state.fixtures[this.gameweek]) {
                 let home = this.$store.state.league.find(club => club.name === fixture.home)
                 let away = this.$store.state.league.find(club => club.name === fixture.away)
@@ -53,7 +55,10 @@ export default({
             }
             this.gameweek += 1
 
-            this.$store.state.league.sort(this.sortGd).sort(this.sortLeague).reverse()
+            // this.$store.state.league.sort(this.sortGd).sort(this.sortLeague).reverse()
+            this.$store.dispatch('setLeague', this.$store.state.league.sort(this.sortGd).sort(this.sortLeague).reverse())
+
+            // console.log(this.$store.state.league.sort(this.sortGd).sort(this.sortLeague).reverse())
         },
           sortGd(a, b) { // sortGoalDifference
             const aGoalDiff = a.gd;
