@@ -23,7 +23,7 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-fixtures up to October
+fixtures up to March
 https://www.bbc.co.uk/sport/football/premier-league/scores-fixtures/2021-12
 
       [
@@ -37,4 +37,4 @@ https://www.bbc.co.uk/sport/football/premier-league/scores-fixtures/2021-12
         { "home": "", "homescore": null, "awayscore": null, "away": "" },
         { "home": "", "homescore": null, "awayscore": null, "away": "" },
         { "home": "", "homescore": null, "awayscore": null, "away": "" }
-      ], 
+      ],

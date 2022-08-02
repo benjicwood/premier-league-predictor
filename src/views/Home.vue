@@ -29,8 +29,8 @@ export default {
     }
   },
   mounted() {
-    this.fetchLeague()
-    this.fetchFixtures()
+    // this.fetchLeague()
+    // this.fetchFixtures()
   }
 }
 </script>

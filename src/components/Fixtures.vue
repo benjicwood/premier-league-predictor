@@ -22,8 +22,6 @@ export default({
     },
     methods: {
         updateTable() {
-            console.log('hello')
-            // console.log(this.$store.state.fixtures[this.gameweek])
             for (const fixture of this.$store.state.fixtures[this.gameweek]) {
                 let home = this.$store.state.league.find(club => club.name === fixture.home)
                 let away = this.$store.state.league.find(club => club.name === fixture.away)
@@ -55,10 +53,7 @@ export default({
             }
             this.gameweek += 1
 
-            // this.$store.state.league.sort(this.sortGd).sort(this.sortLeague).reverse()
             this.$store.dispatch('setLeague', this.$store.state.league.sort(this.sortGd).sort(this.sortLeague).reverse())
-
-            // console.log(this.$store.state.league.sort(this.sortGd).sort(this.sortLeague).reverse())
         },
           sortGd(a, b) { // sortGoalDifference
             const aGoalDiff = a.gd;
@@ -79,17 +74,54 @@ export default({
 
             if (aPoints > bPoints) { comparison = 1; }
             if (aPoints < bPoints) { comparison = -1; }
-
             return comparison;
         },
         async resetTable() {
-            const leagueres = await fetch('api/premierleague')
-            const league = await leagueres.json()
-            this.$store.dispatch('setLeague', league)
-            const fixturesres = await fetch('api/fixtures')
-            const fixtures = await fixturesres.json()
-            this.$store.dispatch('setFixtures', fixtures)
+            const defaultLeague = [
+                { "id": 12, "name": "Manchester City", "icon": "manchestercity", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "lightblue", "current": true },
+                { "id": 11, "name": "Liverpool", "icon": "liverpool", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": true },
+                { "id": 5, "name": "Chelsea", "icon": "chelsea", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "darkblue", "current": true },
+                { "id": 1, "name": "Arsenal", "icon": "arsenal", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": true },
+                { "id": 17, "name": "Tottenham Hotspur", "icon": "tottenhamhotspur", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "black", "current": true },
+                { "id": 13, "name": "Manchester United", "icon": "manchesterunited", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": true },
+                { "id": 19, "name": "West Ham United", "icon": "westhamunited", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#7f1734", "current": true },
+                { "id": 20, "name": "Wolverhampton Wanderers", "icon": "wolverhamptonwanderers", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#d4af37", "current": true },
+                { "id": 2, "name": "Aston Villa", "icon": "astonvilla", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#7f1734", "current": true },
+                { "id": 10, "name": "Leicester City", "icon": "leicestercity", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "blue", "current": true },
+                { "id": 16, "name": "Southampton", "icon": "southampton", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": true },
+                { "id": 6, "name": "Crystal Palace", "icon": "crystalpalace", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "darkblue", "current": true },
+                { "id": 3, "name": "Brighton & Hove Albion", "icon": "brightonandhovealbion", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "lightblue", "current": true },
+                { "id": 14, "name": "Newcastle United", "icon": "newcastleunited", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "black", "current": true },
+                { "id": 23, "name": "Brentford", "icon": "brentford", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": true },
+                { "id": 9, "name": "Leeds United", "icon": "leedsunited", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "black", "current": true },
+                { "id": 7, "name": "Everton", "icon": "everton", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "blue", "current": true },
+                { "id": 8, "name": "Fulham", "icon": "fulham", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "black", "current": true },
+                { "id": 24, "name": "Bournemouth", "icon": "bournemouth", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": true },
+                { "id": 25, "name": "Nottingham Forest", "icon": "nottinghamforest", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": true },
+                { "id": 21, "name": "Watford", "icon": "watford", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#fbee23", "current": false },
+                { "id": 4, "name": "Burnley", "icon": "burnley", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#7f1734", "current": false },
+                { "id": 22, "name": "Norwich City", "icon": "norwichcity", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "green", "current": false },
+                { "id": 18, "name": "West Bromwich Albion", "icon": "westbromwichalbion", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "blue", "current": false },
+                { "id": 15, "name": "Sheffield United", "icon": "sheffieldunited", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": false },
+                { "id": 26, "name": "Bradford City", "icon": "bradfordcity", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#F89C29", "current": false },
+                { "id": 27, "name": "Blackburn Rovers", "icon": "blackburnrovers", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#00A0E1", "current": false },
+                { "id": 28, "name": "Stoke City", "icon": "stokecity", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": false },
+                { "id": 29, "name": "Ipswich Town", "icon": "ipswichtown", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "darkblue", "current": false },
+                { "id": 30, "name": "Portsmouth", "icon": "portsmouth", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "lightblue", "current": false }
+            ];
+            this.resetFixtures()
+
+           this.$store.dispatch('setLeague', defaultLeague)
+
             this.gameweek = 0
+        },
+        resetFixtures() {
+            return this.$store.state.fixtures.forEach(fixtureGroup => {
+                fixtureGroup.forEach(fixture => {
+                    fixture.homescore = null;
+                    fixture.awayscore = null;
+                })
+            })
         }
     }
 
