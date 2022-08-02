@@ -9,17 +9,22 @@
 import TableHeader from './TableHeader'
 import TableRow from './TableRow'
 
+import { mapState } from 'vuex'
+
 export default({
     name: 'League',
     components: {
         TableHeader,
         TableRow,
     },
-    data() {
-        return {
-            currentClubs: this.$store.state.league.filter(club => club.current),
-        }
-    },
+    computed: mapState({
+        currentClubs: state => state.league.filter(club => club.current)
+    }),
+    // watch: {
+    //     currentClubs() {
+    //         console.log('hello');
+    //     }
+    // }
 })
 </script>
 
