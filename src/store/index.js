@@ -8,9 +8,9 @@ export default createStore({
       { "id": 12, "name": "Manchester City", "icon": "manchestercity", "played": 20, "won": 14, "drawn": 3, "lost": 3, "gd": 33, "points": 45, "color": "lightblue", "current": true },
       { "id": 14, "name": "Newcastle United", "icon": "newcastleunited", "played": 20, "won": 10, "drawn": 9, "lost": 1, "gd": 22, "points": 39, "color": "black", "current": true },
       { "id": 13, "name": "Manchester United", "icon": "manchesterunited", "played": 20, "won": 12, "drawn": 3, "lost": 5, "gd": 7, "points": 39, "color": "red", "current": true },
-      { "id": 17, "name": "Tottenham Hotspur", "icon": "tottenhamhotspur", "played": 20, "won": 10, "drawn": 3, "lost": 7, "gd": 8, "points": 33, "color": "black", "current": true },
+      { "id": 17, "name": "Tottenham Hotspur", "icon": "tottenhamhotspur", "played": 21, "won": 11, "drawn": 3, "lost": 7, "gd": 9, "points": 36, "color": "black", "current": true },
       { "id": 3, "name": "Brighton & Hove Albion", "icon": "brightonandhovealbion", "played": 19, "won": 9, "drawn": 4, "lost": 6, "gd": 10, "points": 31, "color": "lightblue", "current": true },
-      { "id": 8, "name": "Fulham", "icon": "fulham", "played": 20, "won": 9, "drawn": 4, "lost": 7, "gd": 3, "points": 31, "color": "black", "current": true },
+      { "id": 8, "name": "Fulham", "icon": "fulham", "played": 21, "won": 9, "drawn": 4, "lost": 8, "gd": 2, "points": 31, "color": "black", "current": true },
       { "id": 23, "name": "Brentford", "icon": "brentford", "played": 20, "won": 7, "drawn": 9, "lost": 4, "gd": 4, "points": 30, "color": "red", "current": true },
       { "id": 11, "name": "Liverpool", "icon": "liverpool", "played": 19, "won": 8, "drawn": 5, "lost": 6, "gd": 9, "points": 29, "color": "red", "current": true },
       { "id": 5, "name": "Chelsea", "icon": "chelsea", "played": 20, "won": 8, "drawn": 5, "lost": 7, "gd": 1, "points": 29, "color": "darkblue", "current": true },
@@ -45,9 +45,6 @@ export default createStore({
       //   { "home": "Liverpool", "homescore": null, "awayscore": null, "away": "Wolverhampton Wanderers" },
       //   { "home": "Chelsea", "homescore": null, "awayscore": null, "away": "Liverpool" },
       // ],
-      [
-        { "home": "Fulham", "homescore": null, "awayscore": null, "away": "Tottenham Hotspur" },
-      ],
       [
         { "home": "Aston Villa", "homescore": null, "awayscore": null, "away": "Leicester City" },
         { "home": "Brentford", "homescore": null, "awayscore": null, "away": "Southampton" },
