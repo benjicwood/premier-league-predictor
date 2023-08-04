@@ -74,6 +74,10 @@ export default({
 
             if (aPoints > bPoints) { comparison = 1; }
             if (aPoints < bPoints) { comparison = -1; }
+            if (aPoints === bPoints) {
+                if (a.name > b.name) { comparison = -1; }
+                if (a.name < b.name) { comparison = 1; }
+            }
             return comparison;
         },
         async resetTable() {
