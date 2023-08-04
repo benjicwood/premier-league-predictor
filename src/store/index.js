@@ -44,7 +44,16 @@ export default createStore({
       { "id": 38, "name": "Coventry City", "icon": "coventrycity", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#0DB6E7", "current": false },
       { "id": 39, "name": "Wrexham", "icon": "wrexham", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": false },
       { "id": 40, "name": "Sheffield Wednesday", "icon": "sheffieldwednesday", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#4482D0", "current": false },
-
+      { "id": 41, "name": "Bristol City", "icon": "bristolcity", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "red", "current": false },
+      { "id": 42, "name": "Bolton Wanderers", "icon": "boltonwanderers", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "black", "current": false },
+      { "id": 43, "name": "Gillingham", "icon": "gillingham", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#2363AF", "current": false },
+      { "id": 44, "name": "Stockport County", "icon": "stockportcounty", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#045699", "current": false },
+      { "id": 45, "name": "Derby County", "icon": "derbycounty", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "black", "current": false },
+      { "id": 46, "name": "Port Vale", "icon": "portvale", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "black", "current": false },
+      { "id": 47, "name": "Carlisle United", "icon": "carlisleunited", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#1D6FB8", "current": false },
+      { "id": 48, "name": "MK Dons", "icon": "mkdons", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#F6D876", "current": false },
+      { "id": 49, "name": "Mansfield Town", "icon": "mansfieldtown", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#FAAE23", "current": false },
+      { "id": 50, "name": "Wigan Athletic", "icon": "wiganathletic", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gd": 0, "points": 0, "color": "#1658B0", "current": false },
     ],
     fixtures: [
       [
